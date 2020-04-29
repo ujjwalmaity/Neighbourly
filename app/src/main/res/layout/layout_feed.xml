@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="16dp"
+    app:cardMaxElevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <ImageView
+            android:id="@+id/iv_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:padding="8dp"
+            android:src="@drawable/ic_more_vert" />
+
+        <ImageView
+            android:id="@+id/iv_user"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/iv_more"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher_round" />
+
+        <TextView
+            android:id="@+id/tv_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_more"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@+id/iv_user"
+            android:text="rahul  \u2022  3 days ago"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_details"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@+id/iv_user"
+            android:drawableStart="@drawable/ic_location_on"
+            android:text="Mumbai"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_location"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@+id/iv_user"
+            android:justificationMode="inter_word"
+            android:text="Where can i get hot water bag for body relief pain in marathahalli?"
+            android:textColor="@color/colorPrimary"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:id="@+id/iv_user_2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tv_question"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher_round" />
+
+        <TextView
+            android:id="@+id/tv_details_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_question"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="13dp"
+            android:layout_toEndOf="@+id/iv_user"
+            android:text="Ujjwal  \u2022  2 days ago"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_ans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_user_2"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@+id/iv_user_2"
+            android:justificationMode="inter_word"
+            android:text="At Apollo pharmacy, you can get hot and cold gel bag. You can put the bag in boiling water to heat and then use it or your pains."
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_ans"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp"
+            android:text="1 Answer" />
+
+        <View
+            android:id="@+id/v_line"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tv_no"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="#25000000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/v_line"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:drawableStart="@drawable/ic_star"
+                android:drawablePadding="5dp"
+                android:gravity="center|start"
+                android:padding="8dp"
+                android:text="Save"
+                android:textColor="@color/iconColor1" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:drawableStart="@drawable/ic_thumb_up"
+                android:drawablePadding="5dp"
+                android:gravity="center|start"
+                android:padding="8dp"
+                android:text="Like"
+                android:textColor="@color/iconColor1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableStart="@drawable/ic_mode_comment"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Answer"
+                android:textColor="@color/iconColor2" />
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
