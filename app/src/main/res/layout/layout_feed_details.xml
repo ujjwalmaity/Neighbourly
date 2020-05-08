@@ -186,67 +186,40 @@
         android:layout_width="match_parent"
         android:layout_height="65dp"
         android:layout_gravity="bottom"
-        android:background="@color/iconColor2"
-        android:orientation="horizontal"
-        android:paddingStart="10dp"
-        android:paddingTop="5dp"
-        android:paddingEnd="10dp"
-        android:paddingBottom="5dp">
+        android:background="@color/iconColor2">
 
-        <ImageView
-            android:id="@+id/type_user"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_centerVertical="true"
-            android:src="@mipmap/ic_launcher_round"
-            android:visibility="gone" />
-
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginStart="10dp"
-            android:layout_toStartOf="@+id/linear_layout_2"
-            android:layout_toEndOf="@+id/type_user"
-            android:orientation="vertical">
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/type_user"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@mipmap/ic_launcher_round"
+                android:visibility="gone" />
 
             <EditText
                 android:id="@+id/type_et"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_above="@+id/type_location"
-                android:layout_gravity="center"
                 android:layout_marginStart="5dp"
+                android:layout_weight="2"
                 android:background="@android:color/transparent"
                 android:hint="Answer..."
                 android:textColor="@android:color/white"
                 android:textColorHint="@android:color/white"
                 android:visibility="gone" />
 
-            <TextView
-                android:id="@+id/type_location"
-                android:layout_width="wrap_content"
-                android:layout_height="20dp"
-                android:layout_alignParentBottom="true"
-                android:drawableStart="@drawable/ic_location_on"
-                android:text="West Bengal"
-                android:textAlignment="center"
-                android:textColor="@android:color/white"
-                android:textSize="12sp"
-                android:visibility="gone" />
-        </RelativeLayout>
-
-        <LinearLayout
-            android:id="@+id/linear_layout_2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"
-            android:orientation="horizontal">
-
             <ImageView
                 android:id="@+id/type_mic"
-                android:layout_width="35dp"
-                android:layout_height="35dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="5dp"
                 android:background="@drawable/design_circle"
                 android:padding="5dp"
                 android:src="@drawable/ic_mic"
@@ -254,8 +227,8 @@
 
             <ImageView
                 android:id="@+id/type_send"
-                android:layout_width="35dp"
-                android:layout_height="35dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:layout_marginStart="8dp"
                 android:background="@drawable/design_circle"
                 android:padding="5dp"
